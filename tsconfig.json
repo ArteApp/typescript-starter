@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es6", // versão do JS para a compilação
+        "outDir": "app/js", //diretorio onde será a saida da compilação
+        "noEmitOnError": true, //não compila se encontrar algum erro
+        "noImplicitAny": true, //não adota any como tipo implicito, obrigando a tipar as variáveis
+        "removeComments": true, //remove os comentarios em produção
+        "module": "system", //sistema carregado no index.html para carregar os js na ordem certa - cada JS é um módulo
+        "strictNullChecks": true, //não permite atribuir null ou undefined para as variaveis
+        "experimentalDecorators": true //habilita o uso de decorator nas classe
+    },
+    "include": [
+        "app/ts/**/*"
+    ]
+}
